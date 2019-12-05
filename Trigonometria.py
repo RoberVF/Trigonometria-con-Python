@@ -7,6 +7,7 @@ while True:
     print("2. Teorema de pitagoras")
     print("3. Cambio de variable")
     print("4. Puntos de la 'Y' en Eje de Coordenadas")
+    print("5. Informacion sobre el software")
     print("\n Establece un valor: ")
     variable= int(input())
 
@@ -147,6 +148,36 @@ while True:
             print(x4,   "  | ", resultado4tan)
             print(x5,   "  | ", resultado5tan)
 
+            os.system("pause")
+
+    if variable==5:
+        os.system("cls")
+        print("\t*Informacion sobre el software*")
+        print("1. Como se usa")
+        print("2. Creditos")
+        valor= int(input())
+
+        if valor==1:
+            os.system("cls")
+            print("""
+                Paso 1-> A la derecha de la funcion hay escrito un numero
+                Paso 2-> Escribir el numero de la funcion que se desee ejecutar
+                Paso 3-> Estableces los valores de los numeros a los que deseas aplicarles el calculo cuando el software te lo especifique
+                Paso 4-> Una vez terminado el proceso la aplicacion te rediccionara a el menu principal pulsando cualquier tecla
+            """)
+            os.system("pause")
+        if valor==2:
+            os.system("cls")
+            print("""
+                    Este software ha sido creado por Roberto Morales 
+                    Fumero, el dia 05-12-2019 con el fin aumentar la 
+                    rapidez y eficiencia del alumnado a la hora de 
+                    resolver operaciones trigonometricas. Actualmente 
+                    es un software en desarrollo por lo que se admiten 
+                    recomendaciones y mejores de este. Estas mejoras se 
+                    podran comunicar en el siguiente correo: 
+                    robertomoralesfumero@gmail.com
+            """)
             os.system("pause")
 
     else:
